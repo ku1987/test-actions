@@ -6,6 +6,8 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout
+              uses: actions/checkout@v4
             - name: Run a one-line script
               run: echo Hello, world!
             - name: Use Sample Action
